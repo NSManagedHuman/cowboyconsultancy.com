@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Sellote - Soundboard App</title>
+    <style>
+        :root {
+            --primary: #224f3e;
+            --secondary: #2d6751;
+            --accent: #40bf94;
+            --text: #e8fff5;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--secondary);
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .app-icon {
+            width: 128px;
+            height: 128px;
+            border-radius: 28px;
+            margin: 1rem;
+        }
+
+        .screenshot {
+            max-width: 300px;
+            border-radius: 12px;
+            margin: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .download-button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="sellote-icn-dark.png" alt="El Sellote Icon" class="app-icon" />
+        <h1>El Sellote</h1>
+        <p>El soundboard más mítico de las Islas Canarias</p>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p>El Sellote es una aplicación para iOS que te permite reproducir y compartir los momentos más memorables del famoso video que conquistó las Islas Canarias.</p>
+            <img src="sellote-screenshot.png" alt="Screenshot de El Sellote" class="screenshot" />
+            <div>
+                <button class="download-button" onclick="location.href='mailto:elsellotedeios@gmail.com';">Contacto</button>
+            </div>
+<!--            <div>-->
+<!--                <a href="#" class="download-button">Descargar en la App Store</a>-->
+<!--            </div>-->
+        </section>
+    </main>
+</body>
+</html>
